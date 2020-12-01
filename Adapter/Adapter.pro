@@ -9,7 +9,10 @@ CONFIG -= app_bundle
 
 SOURCES += \
         duck.cpp \
-        main.cpp
+        main.cpp \
+        mallardduck.cpp \
+        turkey.cpp \
+        wildturkey.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -17,4 +20,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    duck.h
+    duck.h \
+    mallardduck.h \
+    turkey.h \
+    wildturkey.h
